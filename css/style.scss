@@ -1,0 +1,247 @@
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(../../зошо/fonts/Rubik/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(../../зошо/fonts/Rubik/Rubik-Regular.ttf);
+}
+
+$font-stack:  Rubik-Medium;
+$font-stack1: Rubik-Regular;
+$pr-color:  #333333;
+$pr-color2: #828282;
+$pr-color3: #CC221B;
+$pr-color4: #E5261E;
+$pr-color5: #ffffff;
+$font-size: 16px;
+
+@mixin text(
+    $color: $pr-color,
+    $font:  $font-stack1,
+    $size:  $font-size
+) {
+    color: $color;
+    font-family: $font;
+    font-size: $size;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-p {
+    color: $pr-color;
+    font-size: 20px;
+    font-family: $font-stack;
+    margin-left: 11.88px;
+}
+
+.header__search-txt {
+    width: 320px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid $pr-color;
+    font-family: $font-stack;
+    font-size: $font-size;
+    color: $pr-color;
+}
+
+.header__search-txt::placeholder {
+    @include text($pr-color2);
+}
+
+.header__search-txt:focus {
+    outline: none;
+}
+
+.header__search-btn {
+    background: none;
+    border: none;
+    @include text($pr-color4, $font-stack);
+    margin-left: 32px;
+}
+
+.header__auth-btn {
+    width: 113px;
+    height: 38px;
+    background-color: $pr-color4;
+    border-radius: 4px;
+    border: none;
+    font-family: $font-stack;
+    color: $pr-color5;
+    font-size: $font-size;
+}
+
+.header__auth-btn:hover {
+    background-color: $pr-color3;
+}
+
+.nav {
+    width: 311px;
+    display: flex;
+    margin: 44px auto 32px auto;
+    justify-content: center;
+    height: 42px;
+}
+
+.nav__a {
+    color: $pr-color;
+    font-size: 28px;
+    font-family: $font-stack;
+    text-decoration: none;
+}
+
+.nav__a:hover {
+    color: $pr-color4;
+    border-bottom: 2px solid $pr-color4;
+    padding-bottom: 9px;
+}
+
+.movies-h {
+    font-family: $font-stack;
+    font-size: 24px;
+    color: $pr-color;
+    margin-bottom: 16px;
+}
+
+.news-item__img {
+    border-radius: 8px;
+}
+
+.news-item__p {
+    color: $pr-color;
+    font-family: $font-stack1;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.news-item {
+    width: 280px;
+    position: relative;
+}
+
+.news-item__desc {
+    width: 280px;
+    height: 370px;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 8px;
+    font-family: $font-stack1;
+    font-size: 16px;
+    color: $pr-color5;
+    line-height: 140%;
+    padding: 16px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    opacity: 0;
+}
+
+.news-item:hover .news-item__desc {
+    opacity: 1;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genres-item {
+    width: 280px;
+    height: 208px;
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    opacity: 0.8;
+}
+
+.genres-gallery {
+    margin-top: 44px;
+}
+
+.comedy {
+    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+}
+
+.drama {
+    background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+}
+
+.fantastic {
+    background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+}
+
+.horror {
+    background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+}
+
+.genres-item_emoji {
+    font-size: 48px;
+}
+
+.genres-item_name {
+    font-family: $font-stack1;
+    font-size: 20px;
+    color: $pr-color5;
+    position: absolute;
+    top: 160px;
+}
+
+.genres-item:hover {
+    opacity: 1;
+}
+
+.ganres {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: $pr-color5;
+    margin-top: 72px;
+}
+
+.footer-container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__info {
+    margin-left: 39.98px;
+}
+
+.footer__info-p {
+    @include text();
+}
+
+.footer__info-a {
+    color: #1F4766;
+    font-family: $font-stack;
+    font-size: $font-size;
+    text-decoration: none;
+}
+
+.footer__info-p:nth-child(2) {
+    margin: 6px 0 10px 0;
+}

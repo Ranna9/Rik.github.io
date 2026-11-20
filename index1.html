@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+   <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <img class="header__logo-img" src="img/sign.png" alt="логотип">
+                <p class="header__logo-p">Видеосервис</p>
+            </div>
+            <form action="">
+                <input class="header__search-txt" type="text" placeholder="Поиск...">
+                <input class="header__search-bar" type="button" value="Найти">
+            </form>
+            <form action="">
+                <input class="header__auth-btn" type="button" value="Войти">
+            </form>
+        </header>
+        <main>
+            <nav class="nav">
+                <a class="nav-link" href="index.html">Фильмы</a>
+                <a class="nav-link" href="index1.html">Телеканалы</a>
+            </nav>
+            <div class="channels">
+                <div class="news">
+                    <div class="news_first">
+                        <div class="news_img">
+                        <img class="news_first-img" src="img/Vector.png" alt="Первый канал">
+                    </div>
+                        <div class="news_first-box">
+                            <p class="news_first-p">Первый канал</p>
+                            <div class="news_first-1">
+                                <p>13:00</p>
+                                <p class="news_first-1-p">Новости (с субтитрами)</p>
+                            </div>
+                            <div class="news_first-2">
+                                <p>14:00</p>
+                                <p class="news_first-1-p">Давай поженимся</p>
+                            </div>
+                            <div class="news_first-3">
+                                <p>15:00</p>
+                                <p class="news_first-1-p">Другие новости</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_first">
+                        <div class="news_img">
+                        <img class="news_first-img" src="img/2x2.png" alt="2x2">
+                    </div>
+                        <div class="news_first-box">
+                            <p class="news_first-p">2x2</p>
+                            <div class="news_first-1">
+                                <p>13:00</p>
+                                <p class="news_first-1-p">МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+                            </div>
+                            <div class="news_first-2">
+                                <p>14:00</p>
+                                <p class="news_first-1-p">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+                            </div>
+                            <div class="news_first-3">
+                                <p>15:00</p>
+                                <p class="news_first-1-p">БУРДАШЕВ. Сезон 1, 20 серия</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_first">
+                        <div class="news_img">
+                        <img class="news_first-img" src="img/rbc.png" alt="РБК">
+                    </div>
+                        <div class="news_first-box">
+                            <p class="news_first-p">РБК</p>
+                            <div class="news_first-1">
+                                <p>13:00</p>
+                                <p class="news_first-1-p">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+                            </div>
+                            <div class="news_first-2">
+                                <p>14:00</p>
+                                <p class="news_first-1-p">ДЕНЬ. Главные темы</p>
+                            </div>
+                            <div class="news_first-3">
+                                <p>15:00</p>
+                                <p class="news_first-1-p">Главные новости</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_first">
+                        <div class="news_img">
+                        <img class="news_first-img" src="img/amedia.png" alt="AMEDIA PREMIUM">
+                    </div>
+                        <div class="news_first-box">
+                            <p class="news_first-p">AMEDIA PREMIUM</p>
+                            <div class="news_first-1">
+                                <p>13:00</p>
+                                <p class="news_first-1-p">Клиент всегда мёртв</p>
+                            </div>
+                            <div class="news_first-2">
+                                <p>14:00</p>
+                                <p class="news_first-1-p">Голодные игры: Сойка-пересмешница. Часть I</p>
+                            </div>
+                            <div class="news_first-3">
+                                <p>15:00</p>
+                                <p class="news_first-1-p">Секс в большом городе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer__logo">
+            <img src="img/htc-cs-logo.png" alt="logo">
+            </div>
+            <div class="footer__info">
+                <p class="footer__info-p">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+                <p class="footer__info-p">+7 (3412) 93-88-61, 43-29-29</p>
+                <a class="footer__info-a" href="http://htc-cs.ru">htc-cs.ru</a>
+            </div>
+        </div>
+    </footer>
+    <template id="loginTemplate">
+         <div class="loginButton">
+             <p class="loginTitle">Вход</p>
+             <div class="inputFields">
+                 <input class="loginField" type="text" placeholder="Логин">
+                 <input class="passwordField" type="password" placeholder="Пароль">
+                 <div class="doRemember">
+                     <input class="rememberField" type="checkbox" id="rememberMe"> 
+                     <label for="rememberMe">Запомнить</label>
+                 </div>
+                 <button class="login_btn">Войти</button>
+             </div>
+         </div>
+     </template>
+
+     <!-- МОДАЛЬНОЕ ОКНО (крестик убран) -->
+     <div class="modal" id="loginModal" hidden>
+       <div class="modal__backdrop" data-close></div>
+       <div class="modal__wrapper">
+           <div id="loginModalBody"></div>
+       </div>
+     </div>
+
+     <script src="modal.js" defer></script>
+</body>
+</html>
