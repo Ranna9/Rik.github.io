@@ -476,7 +476,7 @@
   }
   .news_first-img{
     width: 100%;
-    max-width: 100px;
+    max-width: 50px;
     object-position: left;
   }
   .news_first-p{
