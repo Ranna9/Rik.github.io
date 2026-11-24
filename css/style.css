@@ -5,11 +5,11 @@
 }
 @font-face {
   font-family: Rubik-Medium;
-  src: url(../../зошо/fonts/Rubik/Rubik-Medium.ttf);
+  src: url(../fonts/Rubik/Rubik-Medium.ttf);
 }
 @font-face {
   font-family: Rubik-Regular;
-  src: url(../../зошо/fonts/Rubik/Rubik-Regular.ttf);
+  src: url(../fonts/Rubik/Rubik-Regular.ttf);
 }
 .container {
   max-width: 1180px;
