@@ -540,9 +540,6 @@
     width: 100%;
     max-width: 343px;
   }
-   .news-item__img {
-    width: 100px;
-  }
   .footer-container {
     height: auto;
     gap: 16px;
