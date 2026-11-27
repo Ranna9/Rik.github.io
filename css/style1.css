@@ -464,12 +464,13 @@
   }
   .news_img {
     width: 100%; 
-    justify-content: center; 
+    max-width: 100%; 
   }
   .news_first-img{
-    max-width: 100px; 
+    max-width: 100%; 
     width: 100%;
-    height: auto;
+    padding: 16px;
+    box-sizing: border-box;
   }
   .news_first-p{
     display: flex;
