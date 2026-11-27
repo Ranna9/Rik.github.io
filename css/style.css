@@ -528,8 +528,7 @@
     text-align: center;
     position: relative;
   }
-  .news-item__desc{
-     width: 100%;           
+  .news-item__desc{         
         height: 100%;          
         left: 0;               
         top: 0;
