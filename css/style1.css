@@ -457,14 +457,19 @@
   }
   .news_first{
     flex-direction: column; 
-    align-items: flex-start;
+    align-items: center; 
     height: auto;
     padding: 16px;
     gap: 12px;
   }
+  .news_img {
+    width: 100%; 
+    justify-content: center; 
+  }
   .news_first-img{
-    max-width: 120px;
-    object-position: left;
+    max-width: 100px; 
+    width: 100%;
+    height: auto;
   }
   .news_first-p{
     display: flex;
