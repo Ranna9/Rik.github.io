@@ -529,7 +529,7 @@
     position: relative;
   }
   .news-item__desc{
-    left: auto;
+    left: 40px;
   }
   .ganres{
     flex-direction: column;
@@ -539,6 +539,9 @@
   .genres-item{
     width: 100%;
     max-width: 343px;
+  }
+   .news-item__img {
+    width: 100px;
   }
   .footer-container {
     height: auto;
