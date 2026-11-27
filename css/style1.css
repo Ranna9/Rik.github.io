@@ -461,11 +461,9 @@
     height: auto;
     padding: 16px;
     gap: 12px;
-    text-align: center;
   }
   .news_first-img{
     width: 100%;
-    max-width: 50px;
     object-position: left;
   }
   .news_first-p{
