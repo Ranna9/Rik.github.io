@@ -532,7 +532,7 @@
     position: relative;
   }
   .news-item__desc{
-    left: 70px;
+    left: 50px;
   }
   .ganres{
     flex-direction: column;
