@@ -478,12 +478,15 @@
 
 
 @media (max-width: 768px){
-  .header{
+.header{
     flex-direction: column;
     gap: 20px;
     padding-top: 16px;
     margin-left: 15px;
     margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .header form {
     width: 100%;
@@ -528,13 +531,8 @@
     text-align: center;
     position: relative;
   }
-  .news-item__desc{         
-        height: 100%;          
-        left: 0;               
-        top: 0;
-        padding: 16px;
-        font-size: 14px;       
-        border-radius: 8px;
+  .news-item__desc{
+    left: 80px;
   }
   .ganres{
     flex-direction: column;
