@@ -484,9 +484,6 @@
     padding-top: 16px;
     margin-left: 15px;
     margin-right: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   .header form {
     width: 100%;
@@ -532,7 +529,7 @@
     position: relative;
   }
   .news-item__desc{
-    left: 40px;
+    left: auto;
   }
   .ganres{
     flex-direction: column;
