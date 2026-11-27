@@ -11,7 +11,6 @@
     font-family: Rubik-Regular;
     src: url(../fonts/Rubik/Rubik-Regular.ttf);
 }
-
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -106,6 +105,16 @@
   border-bottom: 2px #E5261E solid;
   padding-bottom: 2px;
 }
+.nav{
+    max-width: 311px;
+    display: flex;
+    margin: 44px auto 32px auto;
+    justify-content: space-between;
+    height: 42px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 24px;
+}
 .nav-link{
     color: #333333;
     font-size: 28px;
@@ -118,99 +127,144 @@
     padding-bottom: 9px;
 }
 
-.news_first{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    background-color: #f2f2f2;
-    display: flex;
-    border-radius: 8px;
-    margin-bottom: 16px;
+.movies-h {
+  font-family: Rubik-Medium;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 16px;
 }
 
-.news_img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
+.news-item__img {
+  border-radius: 8px;
 }
 
-.news_first-p{
-    font-family: Rubik-Medium;
-    font-size: 20px;
-    color: #333333;
-    margin-bottom: 17px;
-    margin-top: 21px;
+.news-item__p {
+  color: #333333;
+  font-family: Rubik-Regular;
+  font-size: 20px;
+  margin-top: 16px;
 }
 
-.news_first-1{
-    display: flex;
-    font-family: Rubik-Regular;
-    font-size: 16px;
-    margin-bottom: 12px;
+.news-item {
+  width: 280px;
+  position: relative;
 }
 
-.news_first-2{
-    display: flex;
-    font-family: Rubik-Regular;
-    font-size: 16px;
-    margin-bottom: 12px;
+.news-item__desc {
+  width: 280px;
+  height: 370px;
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 8px;
+  font-family: Rubik-Regular;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 140%;
+  padding: 16px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+
 }
 
-.news_first-3{
-    display: flex;
-    font-family: Rubik-Regular;
-    font-size: 16px;
-    margin-bottom: 12px;
+.news-item:hover .news-item__desc {
+  opacity: 1;
 }
 
-.news_first-1-p{
-    margin-left: 16px;
-    font-family: Rubik-Regular;
+.news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.news_first-1:hover{
-    color: #E5261E;
+.genres-item {
+  width: 280px;
+  height: 208px;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  opacity: 0.8;
 }
 
-.news_first-2:hover{
-    color: #E5261E;
+.genres-gallery {
+  margin-top: 44px;
 }
 
-.news_first-3:hover{
-    color: #E5261E;
+.comedy {
+  background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
 }
 
-.footer{
-    background-color: #f2f2f2;
-    margin-top: 72px;
+.drama {
+  background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
 }
 
-.footer-container{
-    height: 120px;
-    display: flex;
-    align-items: center;
+.fantastic {
+  background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
 }
 
-.footer__info{
-    margin-left: 39.98px;
+.horror {
+  background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
 }
 
-.footer__info-p{
-    font-family: Rubik-Regular;
-    font-size: 16px;
-    color: #333333;
+.genres-item_emoji {
+  font-size: 48px;
 }
 
-.footer__info-a{
-    color: #1F4766;
-    font-family: Rubik-Medium;
-    font-size: 16px;
-    text-decoration: none;
+.genres-item_name {
+  font-family: Rubik-Regular;
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: 160px;
 }
 
-.footer__info-p:nth-child(2){
-    margin: 6px 0 10px 0;
+.genres-item:hover {
+  opacity: 1;
+}
+
+.ganres {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer {
+  background-color: #ffffff;
+  margin-top: 72px;
+}
+
+.footer-container {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__info {
+  margin-left: 39.98px;
+}
+
+.footer__info-p {
+  color: #333333;
+  font-family: Rubik-Regular;
+  font-size: 16px;
+}
+
+.footer__info-a {
+  color: #1F4766;
+  font-family: Rubik-Medium;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer__info-p:nth-child(2) {
+  margin: 6px 0 10px 0;
 }
 
 .login-overlay {
@@ -221,6 +275,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
+
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -304,6 +359,11 @@
     cursor: pointer;
     font-family: Rubik-Regular;
 }
+.news-item,
+.news-item__img,
+.news-item__desc {
+  max-width: 100%;
+}
 
 .loginButton {
     background-color: #ffffff;
@@ -357,9 +417,7 @@
 }
 
 .rememberField {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none; 
+    appearance: none; 
     width: 20px;
     height: 20px;
     border: 1px solid #333333;
@@ -418,12 +476,9 @@
     animation: modalSlideUp 0.3s ease forwards;
 }
 
+
 @media (max-width: 768px){
- .container {
-    padding-left: 16px;
-    padding-right: 16px;
-}
- .header{
+  .header{
     flex-direction: column;
     gap: 20px;
     padding-top: 16px;
@@ -457,30 +512,34 @@
   .nav__a{
     font-size: 22px;
   }
-  .news_first{
-    flex-direction: column; 
-    align-items: flex-start;
+  .movies-h{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .news{
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+    display: flex;
+  }
+  .news-item{
+    width: 100%;
     height: auto;
-    padding: 16px;
-    gap: 12px;
+    align-items: center; 
     text-align: center;
   }
-  .news_first-img{
+  .ganres{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .genres-item{
     width: 100%;
-    max-width: 50px;
-    object-position: left;
+    max-width: 343px;
   }
-  .news_first-p{
-    display: flex;
-    width: 100%;
-  }
-  .channels{
-    height: auto; 
-    overflow-y: visible;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-   .footer-container {
+  .footer-container {
     height: auto;
     gap: 16px;
     padding: 24px 16px;
