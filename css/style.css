@@ -523,12 +523,13 @@
   }
   .news-item{
     width: 100%;
-    max-width: 280px; 
-    margin: 0 auto;
+    height: auto;
+    align-items: center; 
+    text-align: center;
     position: relative;
   }
   .news-item__desc{
-     padding: 16px;
+     left: 60px;
   }
   .ganres{
     flex-direction: column;
