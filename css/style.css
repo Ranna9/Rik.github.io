@@ -529,6 +529,10 @@
     height: auto;
     align-items: center; 
     text-align: center;
+    position: relative;
+  }
+  .news-item__desc{
+    left: 80px;
   }
   .ganres{
     flex-direction: column;
